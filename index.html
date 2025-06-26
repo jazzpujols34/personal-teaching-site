@@ -23,23 +23,24 @@
 <body class="bg-white text-gray-800">
 
     <!-- ===== Header / Navigation Bar ===== -->
-    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-teal-600">Anna's English Lab</a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#about" class="text-gray-600 hover:text-teal-600 transition-colors">自我介紹</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition-colors">案例分享</a>
-                <a href="#results" class="text-gray-600 hover:text-teal-600 transition-colors">教學成果</a>
-                <a href="#resources" class="text-gray-600 hover:text-teal-600 transition-colors">教學素材</a>
-            </nav>
-            <a href="#booking" class="bg-orange-500 text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105">
-                預約課程
-            </a>
-            <a href="#contact" class="bg-orange-500 text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105">
-                聯絡我
+<!-- ===== Header / Navigation Bar (支援會員功能) ===== -->
+<header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-teal-600">Anna's English Lab</a>
+        <nav class="hidden md:flex space-x-8 items-center">
+            <a href="#about" class="text-gray-600 hover:text-teal-600 transition-colors">自我介紹</a>
+            <a href="#articles" class="text-gray-600 hover:text-teal-600 transition-colors">教學分享</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition-colors">案例分享</a>
+            <a href="#pricing" class="text-gray-600 hover:text-teal-600 transition-colors">課程方案</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <a href="/login" class="text-gray-600 font-semibold hover:text-teal-600 transition-colors">登入</a>
+            <a href="/signup" class="bg-orange-500 text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105">
+                免費註冊
             </a>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <!-- ===== 1. Hero Section ===== -->
@@ -156,6 +157,51 @@
             </div>
         </section>
 
+<!-- ===== 教學文章 (Blog Section) ===== -->
+<section id="articles" class="py-20 md:py-28 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold text-teal-600">教學分享</h2>
+            <p class="mt-4 text-gray-600">閱讀我的教學心得與實用英文技巧，讓學習更有方向。</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 文章卡片 1 (未來此處會用程式碼迴圈生成) -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 group">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1554224155-8d04421cd6e2?q=80&w=2072" alt="Article thumbnail">
+                <div class="p-6">
+                    <span class="inline-block bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">商務英文</span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">5 個讓你的英文 Email 更專業的秘訣</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">寫商業 Email 總是卡關？這篇文章分享了五個簡單實用的技巧，讓你的溝通更到位...</p>
+                    <a href="/posts/professional-emails" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors group-hover:underline">閱讀更多 →</a>
+                </div>
+            </div>
+            <!-- 文章卡片 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 group">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070" alt="Article thumbnail">
+                 <div class="p-6">
+                    <span class="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">學習技巧</span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">如何利用零碎時間有效背單字？</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">通勤、排隊的時間也能學英文！介紹三款我最推薦的單字 App 和使用方法，讓學習無所不在...</p>
+                    <a href="/posts/vocabulary-apps" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors group-hover:underline">閱讀更多 →</a>
+                </div>
+            </div>
+            <!-- 文章卡片 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 group">
+                <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2070" alt="Article thumbnail">
+                 <div class="p-6">
+                    <span class="inline-block bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">生活會話</span>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">看 Netflix 學英文的正確姿勢</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">你真的「看懂」美劇了嗎？從選擇影片、開啟字幕到做筆記，教你如何將娛樂轉化為有效的學習...</p>
+                    <a href="/posts/learning-with-netflix" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors group-hover:underline">閱讀更多 →</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="/blog" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-full hover:bg-teal-700 transition-colors">查看所有文章</a>
+        </div>
+    </div>
+</section>
+
         <!-- ===== 教學方案與價格 (放在 Testimonials 區塊後) ===== -->
 <section id="pricing" class="py-20 md:py-28 bg-white">
     <div class="container mx-auto px-6">
@@ -253,6 +299,25 @@
             </details>
         </div>
     </div>
+</section>
+
+<!-- ===== 聯絡方式 (Contact Info) ===== -->
+<section id="contact-info" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold text-teal-700">還有其他問題？</h3>
+        <p class="mt-2 text-gray-600">隨時歡迎透過 Email 聯繫我，或在社群媒體上找到我！</p>
+        <div class="mt-6 flex justify-center items-center space-x-6">
+            <a href="mailto:your-email@example.com" class="font-semibold text-orange-600 hover:text-orange-700 transition-colors">your-email@example.com</a>
+            <!-- 可選：社群連結 -->
+            <a href="#" class="text-gray-400 hover:text-teal-600 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- 原本的 Calendly 預約區塊保持不變 -->
+<section id="booking" class="py-20 md:py-28 bg-gradient-to-br from-cyan-50 to-teal-100">
+    <!-- ... 此處保留你原來的 Calendly 預約區塊 ... -->
 </section>
 
 <!-- ===== 3. 聯絡我 (Contact Me) - 取代 Booking Section ===== -->
