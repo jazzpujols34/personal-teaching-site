@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's English Lab | 你的專屬英語教練</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts (可選，但能讓字體更美觀) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* 自定義字體 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ===== Header / Navigation Bar ===== -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-600">Anna's English Lab</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-teal-600 transition-colors">自我介紹</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition-colors">案例分享</a>
+                <a href="#results" class="text-gray-600 hover:text-teal-600 transition-colors">教學成果</a>
+                <a href="#resources" class="text-gray-600 hover:text-teal-600 transition-colors">教學素材</a>
+            </nav>
+            <a href="#booking" class="bg-orange-500 text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105">
+                預約課程
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== 1. Hero Section ===== -->
+        <section id="hero" class="h-screen min-h-[600px] flex items-center bg-gradient-to-br from-cyan-50 to-teal-100">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-teal-800 leading-tight">
+                    自信開口說英文<br>從這裡開始
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    客製化一對一線上教學，專注於商務溝通與生活會話，為你打造流利英語力。
+                </p>
+                <a href="#booking" class="mt-8 inline-block bg-orange-500 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-orange-600 transition-transform transform hover:scale-105 shadow-lg">
+                    立即預約免費諮詢
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== 2. 自我介紹 (About Me) ===== -->
+        <section id="about" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="bg-teal-200 rounded-full w-48 h-48 absolute -top-8 -left-8 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=1887" alt="Anna - 你的英語老師" class="relative rounded-lg shadow-xl z-10 w-full max-w-sm mx-auto">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-teal-600 mb-6">Hi, 我是 Anna</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        我相信學英文不該只是死背單字文法，而是要學會「用」英文。我的教學核心是幫助你建立信心，在真實情境中流暢表達。無論你是為了工作、旅行還是個人興趣，我都會為你量身打造最適合的學習路徑。
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold text-gray-800">8 年以上</strong> 線上英語教學經驗</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold text-gray-800">TESOL 國際英語教師</strong> 專業認證</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-6 h-6 text-teal-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>專長：<strong class="font-semibold text-gray-800">商務英語、面試準備、生活會話</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3. 案例分享 & 教學成果 (Testimonials & Results) ===== -->
+        <section id="testimonials" class="py-20 md:py-28 bg-teal-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-4xl font-bold text-teal-600">聽聽學員怎麼說</h2>
+                    <p class="mt-4 text-gray-600">真實的改變，看得見的成果。</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- 案例 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic text-lg">"Anna 的課程讓我對英文面試不再恐懼。她非常有耐心地陪我模擬，修正我的用詞，最終我成功拿到了夢想外商的 Offer！"</p>
+                        <div class="mt-6 flex items-center">
+                            <img class="w-14 h-14 rounded-full mr-4" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex C.">
+                            <div>
+                                <p class="font-bold text-teal-700">Alex C.</p>
+                                <p class="text-sm text-gray-500">軟體工程師，成功錄取外商</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 案例 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform transition-transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic text-lg">"上課氣氛很輕鬆，Anna 總能找到有趣的話題讓我練習口說。三個月後，我的多益成績從 650 進步到 880，口說也流利很多！"</p>
+                        <div class="mt-6 flex items-center">
+                            <img class="w-14 h-14 rounded-full mr-4" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily L.">
+                            <div>
+                                <p class="font-bold text-teal-700">Emily L.</p>
+                                <p class="text-sm text-gray-500">行銷企劃，多益進步 230 分</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 4. 教學素材 (Teaching Materials) ===== -->
+        <section id="resources" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-4xl font-bold text-teal-600">免費學習資源</h2>
+                    <p class="mt-4 text-gray-600">下載實用教材，感受我的教學風格。</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 素材 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden group">
+                        <div class="bg-cyan-100 h-40 flex items-center justify-center">
+                           <svg class="w-16 h-16 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <div class="p-6">
+                             <span class="inline-block bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">PDF</span>
+                            <h3 class="font-bold text-xl mb-2">10 個最易混淆的商務郵件用語</h3>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors">立即下載 →</a>
+                        </div>
+                    </div>
+                    <!-- 素材 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden group">
+                        <div class="bg-orange-100 h-40 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">Video</span>
+                            <h3 class="font-bold text-xl mb-2">3 分鐘學會道地的英文問候法</h3>
+                             <a href="#" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors">觀看影片 →</a>
+                        </div>
+                    </div>
+                    <!-- 素材 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden group">
+                         <div class="bg-gray-100 h-40 flex items-center justify-center">
+                           <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full mb-2">Blog</span>
+                            <h3 class="font-bold text-xl mb-2">教學日誌：如何克服口說恐懼</h3>
+                             <a href="#" class="font-semibold text-orange-500 hover:text-orange-600 transition-colors">閱讀文章 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 5. 預約課程 (Booking) ===== -->
+        <section id="booking" class="py-20 md:py-28 bg-gradient-to-br from-cyan-50 to-teal-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl font-bold text-teal-600">準備好開始你的英文學習之旅了嗎？</h2>
+                    <p class="mt-4 text-gray-600 text-lg">選擇下方你方便的時間，預約一堂 30 分鐘的免費諮詢。讓我們聊聊你的目標，並規劃專屬於你的學習藍圖！</p>
+                </div>
+
+                <!-- Calendly 嵌入工具放置區 -->
+                <div class="w-full max-w-4xl mx-auto mt-12 bg-white rounded-lg shadow-2xl p-2 min-h-[700px]">
+                    <!-- 
+                        這裡是嵌入 Calendly 或其他預約工具的地方。
+                        例如 Calendly 會提供一段像這樣的程式碼讓你貼上：
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/your-username" style="min-width:320px;height:630px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    -->
+                    <div class="w-full h-full flex items-center justify-center bg-gray-50 rounded-md">
+                        <p class="text-gray-500 text-center p-8">
+                            [ 這裡是 Calendly 預約日曆的嵌入位置 ]<br>
+                            <span class="text-sm">你可以到 Calendly.com 註冊免費帳號，<br>並將嵌入碼貼到此處。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-teal-800 text-white/80 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Anna's English Lab. All Rights Reserved.</p>
+            <p class="text-sm text-white/60 mt-2">Designed with ❤️ for language learners.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
